@@ -46,13 +46,15 @@ Complete the following modification objectives:
 
 * Create a new table called actors (We are going to pretend the actor can only play in one movie)
 The table should include name, character name, foreign key to movies and date of birth at least plus an id field.
+
 * Pick 3 movies and create insert statements for 10 actors each.  You should use the multi value insert statements
+
 * Create a new column in the movie table to hold the MPAA rating.
 UPDATE 5 different movies to their correct rating
 
 
 ## Hard Mode
 * Create a new field on the movies table for the year.  Using an update query and a substring method update that column for every movie with the year found in the title column.
-HINT:
+HINT: The pattern needed is '\d{4}' and depending on how your 0xDBE was set up you may need to use the psql command line to get the query to work.
 
 * Now that we know we can add actors create a join table between actors and movies.  This table should not only have the foreign keys for each of the tables, include an extra field for the character name for the actor.  Use the current actor table to populate the join table with data including the character’s name
