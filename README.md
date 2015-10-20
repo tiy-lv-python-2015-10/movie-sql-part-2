@@ -46,9 +46,7 @@ Complete the following modification objectives:
 
 * Create a new table called actors (We are going to pretend the actor can only play in one movie)
 The table should include name, character name, foreign key to movies and date of birth at least plus an id field.
-
 * Pick 3 movies and create insert statements for 10 actors each.  You should use the multi value insert statements
-
 * Create a new column in the movie table to hold the MPAA rating.
 UPDATE 5 different movies to their correct rating
 
