@@ -41,6 +41,7 @@ Complete the following aggregation objectives:
 * Find the user with the highest average rating
 * Find the user with the highest average rating with more than 50 reviews
 * Find the movies with an average rating over 4
+* For each genre find the total number of reviews as well as the average review sort by highest average review.
 
 Complete the following modification objectives:
 
@@ -58,3 +59,7 @@ UPDATE 5 different movies to their correct rating
 HINT: The pattern needed is '\d{4}' and depending on how your 0xDBE was set up you may need to use the psql command line to get the query to work.
 
 * Now that we know we can add actors create a join table between actors and movies.  This table should not only have the foreign keys for each of the tables, include an extra field for the character name for the actor.  Use the current actor table to populate the join table with data including the character’s name
+
+* Once you have completed the new year column go through the title column and strip out the year.
+
+* Create a new column in the movies table and store the average review for each and every movie. 
