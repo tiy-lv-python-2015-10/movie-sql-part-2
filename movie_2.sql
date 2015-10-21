@@ -118,3 +118,14 @@ WHERE movieid = 4;
 UPDATE movies
 SET mpaa_rating = 'PG'
 WHERE movieid = 5;
+
+ALTER TABLE movies add year int NULL;
+
+UPDATE movies
+SET year = cast(substring(movies.title, '(\d{4})') as int);
+
+SELECT movies.movieid, movies.title, actors.name as actor, actors.charater_name
+FROM movies
+  JOIN actors ON movies.movieid = actors.movieid;
+
+ALTER TABLE movies add avg_rating float NULL;
